@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div class="startPage">
+        <p class="title">Snake</p>
+        <div id="speedChoise">
+            <p id="speed">Speed</p>
+            <label>Slow<input name="spd" type="radio" id="lowSpd"></label>
+            <label>Medium<input name="spd" type="radio" id="medSpd" checked></label>
+            <label>Fast<input name="spd" type="radio" id="fastSpd"></label>
+        </div>
+        <p id="score">High score: 0</p>
+        <button id="startBtn">Play</button>
+    </div>
+    <div class="back"></div>
+    <div class="wrapper">
+        <div class="onPause">
+            <p class="pause">Pause</p>
+            <p id="currentScore">Current score: 0</p>
+            <div class="btns">
+                <button id="continueBtn">Continue</button>
+                <button id="endGame">To the main menu</button>
+            </div>
+        </div>
+        <div class="game">
+            <canvas id="canvas" width="400" height="400"></canvas>
+            <p id="scoreCount">Score: 0</p>
+        </div>
+    </div>
+</body>
+</html>
