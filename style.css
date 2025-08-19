@@ -1,0 +1,99 @@
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: bolder;
+}
+body {user-select: none;}
+#canvas {
+    border: 3px solid rgb(252, 0, 0);
+    border-radius: 5px;
+    box-shadow: rgba(255, 0, 0, 0.26) 10px 10px;
+}
+.game {
+    display: flex; gap: 50px;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    z-index: 49;
+    top: 50%; transform: translate(-50%, -50%);
+    left: 50%;
+}
+#scoreCount {
+    font-size: 25px;
+    width: 100%;
+    text-align: center;
+    color: red;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #ffffff8c;
+    box-shadow: rgba(229, 255, 0, 0.26) 5px 10px;
+}
+.back {
+    position: absolute;
+    z-index: 10;
+    width: 100%; height: 100%;
+    background: linear-gradient(rgba(250, 171, 0, 0.678), rgba(255, 8, 0, 0.603));
+}
+.startPage, .onPause {
+    color: #fff;
+    position: absolute;
+    z-index: 50;
+    display: flex;
+    flex-direction: column;
+    top: 50%; transform: translate(-50%, -50%);
+    left: 50%;
+    width: 30%;
+    height: 50%;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    border: #ffffff 3px solid;
+    border-radius: 30px;
+    background: linear-gradient(rgb(255, 8, 0), rgba(250, 171, 0, 0.712));
+}
+.startPage button, .onPause button {
+    cursor: pointer;
+    width: 70%;
+    height: 50px;
+    border: none;
+    color: #ff0202;
+    border-radius: 50px;
+    transition: .3s;
+}
+.startPage button:hover, .onPause button:hover {
+    background: linear-gradient(#f8fc02, rgb(255, 102, 0));
+    color: #fff;
+}
+.title {font-size: 50px}
+#score {font-size: 35px}
+
+button {font-size: 15px}
+button:active{transform: scale(1.1);}
+.onPause {
+    justify-content: space-evenly;
+}
+.btns {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    gap: 20px;
+    align-items: center;
+}
+#speedChoise {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+#speed{
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+input[type="radio"] {
+    accent-color: red;
+}
+.onPause button {width: 100%}
+.pause {font-size: 50px;}
+#currentScore {font-size: 30px}
